@@ -14,6 +14,16 @@ class HtmlToMarkdownConverter {
   }
 
   setupCustomRules() {
+    // strongタグのカスタムルールを追加（スペース問題を根本解決）
+    this.turndownService.addRule('strong', {
+      filter: 'strong',
+      replacement: function (content, node) {
+        // 内容の前後スペースを除去してから太字化
+        const trimmedContent = content.trim();
+        return trimmedContent ? '**' + trimmedContent + '**' : '';
+      }
+    });
+
     // カスタムルールを追加
     this.turndownService.addRule('codeBlock', {
       filter: function (node) {
@@ -64,6 +74,9 @@ class HtmlToMarkdownConverter {
     try {
       let markdown = this.turndownService.turndown(html);
       
+      // 太字の前後のスペース問題を修正
+      markdown = this.fixBoldSpacing(markdown);
+      
       // 余分な改行を整理
       markdown = markdown
         .replace(/\n{3,}/g, '\n\n')  // 3個以上の連続改行を2個に
@@ -82,11 +95,26 @@ class HtmlToMarkdownConverter {
       const footerSection = this.generateFooter();
       markdown = markdown + '\n\n' + footerSection;
 
+
       return markdown;
     } catch (error) {
       console.error('HTML to Markdown conversion failed:', error);
       return html; // 変換に失敗した場合は元のHTMLを返す
     }
+  }
+
+  // 太字の前後のスペース問題を修正
+  fixBoldSpacing(markdown) {
+    // TurndownServiceのカスタムstrongルールで既に修正されているか確認
+    const boldParts = markdown.match(/\*\*[^*]*?\*\*/g) || [];
+    const hasBadSpacing = boldParts.some(bold => /\*\*\s+[^*]*?\s+\*\*/.test(bold));
+    
+    if (!hasBadSpacing) {
+      return markdown; // 既に正しい場合は何もしない
+    }
+    
+    // 本当にスペース問題がある場合のみ修正
+    return markdown.replace(/\*\*\s+([^*]+?)\s+\*\*/g, '**$1**');
   }
 
   // フッター部分を生成（Xとブログサイトの紹介）
