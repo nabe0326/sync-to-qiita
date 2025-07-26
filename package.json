@@ -1,0 +1,30 @@
+{
+  "name": "microcms-qiita-sync",
+  "version": "1.0.0",
+  "description": "Automatic synchronization system from microCMS to Qiita",
+  "main": "scripts/sync-microcms-to-qiita.js",
+  "scripts": {
+    "sync": "node scripts/sync-microcms-to-qiita.js",
+    "test-sync": "node scripts/test-sync.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "microcms",
+    "qiita",
+    "sync",
+    "automation",
+    "github-actions"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "turndown": "^7.1.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

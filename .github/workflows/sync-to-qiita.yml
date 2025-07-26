@@ -1,0 +1,118 @@
+name: Sync microCMS to Qiita
+
+on:
+  # 毎日日本時間9:00に実行（UTC 0:00）
+  schedule:
+    - cron: '0 0 * * *'
+  
+  # 手動実行を許可
+  workflow_dispatch:
+  
+  # メインブランチへのプッシュ時にも実行（テスト用）
+  push:
+    branches: [ main ]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/sync-to-qiita.yml'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # sync-history.jsonを更新するために必要
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run sync script
+      env:
+        MICROCMS_DOMAIN: ${{ secrets.MICROCMS_DOMAIN }}
+        MICROCMS_API_KEY: ${{ secrets.MICROCMS_API_KEY }}
+        QIITA_ACCESS_TOKEN: ${{ secrets.QIITA_ACCESS_TOKEN }}
+        ORIGINAL_SITE_URL: ${{ secrets.ORIGINAL_SITE_URL }}
+        NODE_ENV: production
+      run: npm run sync
+      
+    - name: Commit and push sync history
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # sync-history.jsonが変更されているかチェック
+        if git diff --quiet sync-history.json; then
+          echo "No changes to sync history"
+        else
+          git add sync-history.json
+          git commit -m "Update sync history [skip ci]"
+          git push
+        fi
+      
+    - name: Create issue on failure
+      if: failure()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const title = 'microCMS to Qiita sync failed';
+          const body = `
+          ## Sync Failed
+          
+          The automated sync from microCMS to Qiita failed.
+          
+          **Run Details:**
+          - Workflow: ${{ github.workflow }}
+          - Run ID: ${{ github.run_id }}
+          - Commit: ${{ github.sha }}
+          - Timestamp: ${new Date().toISOString()}
+          
+          Please check the [workflow logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for more details.
+          
+          ### Possible Causes:
+          - API rate limits exceeded
+          - Invalid credentials
+          - Network connectivity issues
+          - microCMS or Qiita API changes
+          - Article content formatting issues
+          
+          This issue was automatically created by GitHub Actions.
+          `;
+          
+          // 既存の同様のissueがオープンされているかチェック
+          const existingIssues = await github.rest.issues.listForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'open',
+            labels: ['automation', 'sync-error']
+          });
+          
+          const existingIssue = existingIssues.data.find(issue => 
+            issue.title === title
+          );
+          
+          if (!existingIssue) {
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              labels: ['automation', 'sync-error']
+            });
+          } else {
+            // 既存のissueにコメントを追加
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existingIssue.number,
+              body: `Another sync failure occurred at ${new Date().toISOString()}. [View logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})`
+            });
+          }
