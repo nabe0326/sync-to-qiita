@@ -64,6 +64,47 @@ class HtmlToMarkdownConverter {
         return prefix + content + (node.nextSibling && !/\n$/.test(content) ? '\n' : '');
       }
     });
+
+    // テーブルの変換を適切に処理
+    this.turndownService.addRule('table', {
+      filter: 'table',
+      replacement: function (content, node) {
+        // テーブル全体を囲む改行を確保
+        return '\n\n' + content + '\n\n';
+      }
+    });
+
+    this.turndownService.addRule('tableRow', {
+      filter: 'tr',
+      replacement: function (content, node) {
+        const isHeaderRow = node.parentNode.nodeName === 'THEAD' || 
+                           (node.parentNode.nodeName === 'TBODY' && node.parentNode.previousElementSibling?.nodeName !== 'THEAD' && node === node.parentNode.firstElementChild);
+        
+        let row = '|' + content;
+        
+        // ヘッダー行の場合、区切り線を追加
+        if (isHeaderRow) {
+          const cellCount = node.children.length;
+          const separator = Array(cellCount).fill(' --- ').join(' |');
+          row += '\n|' + separator + ' |';
+        }
+        
+        return row + '\n';
+      }
+    });
+
+    this.turndownService.addRule('tableCell', {
+      filter: ['th', 'td'],
+      replacement: function (content, node) {
+        // セル内容をクリーンアップ（改行やパイプ文字をエスケープ）
+        const cleanContent = content
+          .replace(/\n/g, ' ')           // 改行をスペースに変換
+          .replace(/\|/g, '\\|')         // パイプ文字をエスケープ
+          .trim();
+        
+        return ' ' + cleanContent + ' |';
+      }
+    });
   }
 
   convert(html, options = {}) {

@@ -3,9 +3,14 @@
 const MicroCMSQiitaSync = require('./sync-microcms-to-qiita');
 
 class TestSync extends MicroCMSQiitaSync {
-  constructor() {
+  constructor(targetArticleId = null) {
     super();
-    console.log('🧪 TEST MODE: Will only process 1 article');
+    this.targetArticleId = targetArticleId;
+    if (targetArticleId) {
+      console.log(`🧪 TEST MODE: Will only process article ID: ${targetArticleId}`);
+    } else {
+      console.log('🧪 TEST MODE: Will only process 1 article (first one)');
+    }
   }
 
   async syncArticles() {
@@ -21,8 +26,25 @@ class TestSync extends MicroCMSQiitaSync {
 
       const history = this.loadSyncHistory();
       
-      // テスト用: 最初の1記事のみ処理
-      const testArticle = articles[0];
+      // テスト用: 指定されたIDの記事または最初の1記事のみ処理
+      let testArticle;
+      if (this.targetArticleId) {
+        testArticle = articles.find(article => article.id === this.targetArticleId);
+        if (!testArticle) {
+          console.log(`❌ Article with ID '${this.targetArticleId}' not found`);
+          console.log(`📋 Available article IDs:`);
+          articles.slice(0, 10).forEach(article => {
+            console.log(`   - ${article.id}: ${article.title}`);
+          });
+          if (articles.length > 10) {
+            console.log(`   ... and ${articles.length - 10} more`);
+          }
+          return;
+        }
+      } else {
+        testArticle = articles[0];
+      }
+      
       console.log(`\n📝 Test article: ${testArticle.title}`);
       console.log(`📅 Published: ${testArticle.publishedAt}`);
       console.log(`🔗 ID: ${testArticle.id}`);
@@ -96,6 +118,29 @@ class TestSync extends MicroCMSQiitaSync {
   }
 }
 
+// コマンドライン引数を処理
+const args = process.argv.slice(2);
+const targetArticleId = args[0];
+
+// 使用方法を表示
+if (args.includes('--help') || args.includes('-h')) {
+  console.log(`
+🧪 Test Sync Tool - Usage
+
+node test-sync.js [ARTICLE_ID]
+
+Examples:
+  node test-sync.js                    # Test sync first article
+  node test-sync.js abc123             # Test sync specific article by ID
+  node test-sync.js --help             # Show this help
+
+Options:
+  ARTICLE_ID    Specific microCMS article ID to test sync
+  --help, -h    Show this help message
+`);
+  process.exit(0);
+}
+
 // テスト実行
-const testSync = new TestSync();
+const testSync = new TestSync(targetArticleId);
 testSync.syncArticles();
