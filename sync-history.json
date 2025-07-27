@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-07-27T01:10:44.580Z",
+  "lastSyncTime": "2025-07-27T01:20:05.820Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -114,6 +114,18 @@
       "title": "Claude Codeのサブエージェントがヤバい！並列実行で開発速度が爆速になった話",
       "lastSyncedAt": "2025-07-27T00:46:51.210Z",
       "microCMSUpdatedAt": "2025-07-26T16:09:07.619Z"
+    },
+    "h34k46lnu6lc": {
+      "qiitaId": "916388f9d2fd730abe8a",
+      "title": "OpenAI Function Calling vs MCP どっちを選ぶべき?",
+      "lastSyncedAt": "2025-07-27T01:20:01.129Z",
+      "microCMSUpdatedAt": "2025-07-26T14:52:43.370Z"
+    },
+    "5fxnn4aucrk": {
+      "qiitaId": "c586756c7c0918362391",
+      "title": "【2025年最新】マルチモーダルAI活用術：画像も音声もテキストも！最強AI実装ガイド",
+      "lastSyncedAt": "2025-07-27T01:20:03.817Z",
+      "microCMSUpdatedAt": "2025-07-26T13:05:20.194Z"
     }
   }
 }
