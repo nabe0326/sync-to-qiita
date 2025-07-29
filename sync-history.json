@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-07-28T02:26:43.590Z",
+  "lastSyncTime": "2025-07-29T02:31:38.961Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -156,6 +156,12 @@
       "title": "AI格差が月収100万円の差を生む2025年｜今から始める7つの対策",
       "lastSyncedAt": "2025-07-28T02:26:41.588Z",
       "microCMSUpdatedAt": "2025-07-27T03:00:00.707Z"
+    },
+    "931j46vc9u2": {
+      "qiitaId": "f0bbcf958871eba8b4c5",
+      "title": "Claude Codeで実現！バラバラPDFを統一フォーマットに自動変換してみた",
+      "lastSyncedAt": "2025-07-29T02:31:36.957Z",
+      "microCMSUpdatedAt": "2025-07-28T15:21:40.949Z"
     }
   }
 }
