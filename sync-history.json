@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-07-29T02:31:38.961Z",
+  "lastSyncTime": "2025-07-30T02:23:15.764Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -162,6 +162,12 @@
       "title": "Claude Codeで実現！バラバラPDFを統一フォーマットに自動変換してみた",
       "lastSyncedAt": "2025-07-29T02:31:36.957Z",
       "microCMSUpdatedAt": "2025-07-28T15:21:40.949Z"
+    },
+    "n61qi9198qg": {
+      "qiitaId": "d1c28cb8b87f4208479b",
+      "title": "ブラウザ戦争の新章：AIブラウザで変わるWeb体験",
+      "lastSyncedAt": "2025-07-30T02:23:13.760Z",
+      "microCMSUpdatedAt": "2025-07-29T16:58:54.444Z"
     }
   }
 }
