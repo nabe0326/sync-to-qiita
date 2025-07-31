@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-07-30T02:23:15.764Z",
+  "lastSyncTime": "2025-07-31T02:22:21.774Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -168,6 +168,18 @@
       "title": "ブラウザ戦争の新章：AIブラウザで変わるWeb体験",
       "lastSyncedAt": "2025-07-30T02:23:13.760Z",
       "microCMSUpdatedAt": "2025-07-29T16:58:54.444Z"
+    },
+    "rluve0vev28": {
+      "qiitaId": "cb243960724c74f2055b",
+      "title": "「AIに仕事を奪われる」なんて、もう古い。AIと一緒に爆速で成長する方法、教えます",
+      "lastSyncedAt": "2025-07-31T02:22:17.069Z",
+      "microCMSUpdatedAt": "2025-07-31T00:58:05.684Z"
+    },
+    "o3q8fvhwqs": {
+      "qiitaId": "43164a665a40cadfdf6f",
+      "title": "金曜の夜、プロンプトで日報地獄から解放された話【実体験】生成AIで40分→5分に時短成功",
+      "lastSyncedAt": "2025-07-31T02:22:19.770Z",
+      "microCMSUpdatedAt": "2025-07-30T18:24:47.894Z"
     }
   }
 }
