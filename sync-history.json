@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-07-31T02:22:21.774Z",
+  "lastSyncTime": "2025-08-01T02:33:57.789Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -180,6 +180,12 @@
       "title": "金曜の夜、プロンプトで日報地獄から解放された話【実体験】生成AIで40分→5分に時短成功",
       "lastSyncedAt": "2025-07-31T02:22:19.770Z",
       "microCMSUpdatedAt": "2025-07-30T18:24:47.894Z"
+    },
+    "t98us85eal": {
+      "qiitaId": "a22e7e971289d48cc9fc",
+      "title": "「え、AIって予測変換の化け物だったの？」生成AIの中身を覗いてみたら想像と全然違った件",
+      "lastSyncedAt": "2025-08-01T02:33:55.786Z",
+      "microCMSUpdatedAt": "2025-07-31T13:15:39.073Z"
     }
   }
 }
