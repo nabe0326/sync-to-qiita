@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-08-01T02:33:57.789Z",
+  "lastSyncTime": "2025-08-02T02:10:49.994Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -186,6 +186,12 @@
       "title": "「え、AIって予測変換の化け物だったの？」生成AIの中身を覗いてみたら想像と全然違った件",
       "lastSyncedAt": "2025-08-01T02:33:55.786Z",
       "microCMSUpdatedAt": "2025-07-31T13:15:39.073Z"
+    },
+    "ookgz07ys": {
+      "qiitaId": "6a9d6784de047d79f031",
+      "title": "もう「ChatGPTの使い方が微妙」なんて言わせない！非エンジニアが今すぐマネできる生成AI活用術",
+      "lastSyncedAt": "2025-08-02T02:10:47.990Z",
+      "microCMSUpdatedAt": "2025-08-01T08:59:24.034Z"
     }
   }
 }
