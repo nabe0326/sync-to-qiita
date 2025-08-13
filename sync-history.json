@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-08-12T02:05:37.062Z",
+  "lastSyncTime": "2025-08-13T02:07:26.809Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -252,6 +252,18 @@
       "title": "【2025年最新】OpenAI APIのファインチューニングで作る「うちの会社専用AI」",
       "lastSyncedAt": "2025-08-12T02:05:35.058Z",
       "microCMSUpdatedAt": "2025-08-12T00:39:11.444Z"
+    },
+    "v_d090-9fr6": {
+      "qiitaId": "1cfe3e01d18e7b379a1d",
+      "title": "LangChainで始めるAIチャット開発：初心者向け5ステップ",
+      "lastSyncedAt": "2025-08-13T02:07:21.723Z",
+      "microCMSUpdatedAt": "2025-08-13T00:38:54.758Z"
+    },
+    "j-6dqwt0d": {
+      "qiitaId": "0597ad492489f9188434",
+      "title": "【2025年最新】Abacus.AI完全攻略ガイド - エンタープライズAI革命の全貌を徹底解説",
+      "lastSyncedAt": "2025-08-13T02:07:24.807Z",
+      "microCMSUpdatedAt": "2025-08-12T08:10:02.724Z"
     }
   }
 }
