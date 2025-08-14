@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-08-13T02:07:26.809Z",
+  "lastSyncTime": "2025-08-14T02:08:05.289Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -264,6 +264,12 @@
       "title": "【2025年最新】Abacus.AI完全攻略ガイド - エンタープライズAI革命の全貌を徹底解説",
       "lastSyncedAt": "2025-08-13T02:07:24.807Z",
       "microCMSUpdatedAt": "2025-08-12T08:10:02.724Z"
+    },
+    "8ijtylfwhpx": {
+      "qiitaId": "48fa653790df2375a4f2",
+      "title": "LangExtract実装ガイド：テキストが構造化データに変わる瞬間を目撃せよ",
+      "lastSyncedAt": "2025-08-14T02:08:03.285Z",
+      "microCMSUpdatedAt": "2025-08-13T11:12:34.182Z"
     }
   }
 }
