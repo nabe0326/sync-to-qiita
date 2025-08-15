@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-08-14T02:08:05.289Z",
+  "lastSyncTime": "2025-08-15T02:08:43.624Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -270,6 +270,12 @@
       "title": "LangExtract実装ガイド：テキストが構造化データに変わる瞬間を目撃せよ",
       "lastSyncedAt": "2025-08-14T02:08:03.285Z",
       "microCMSUpdatedAt": "2025-08-13T11:12:34.182Z"
+    },
+    "wy6ztsn1tmfa": {
+      "qiitaId": "d3e8649ef86d61c40458",
+      "title": "生成AIの「信頼性」をどう担保するか？説明可能性（XAI）とファクトチェックの最新技術",
+      "lastSyncedAt": "2025-08-15T02:08:41.621Z",
+      "microCMSUpdatedAt": "2025-08-14T04:11:26.100Z"
     }
   }
 }
