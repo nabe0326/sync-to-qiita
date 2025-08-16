@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-08-15T02:08:43.624Z",
+  "lastSyncTime": "2025-08-16T02:02:35.846Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -276,6 +276,12 @@
       "title": "生成AIの「信頼性」をどう担保するか？説明可能性（XAI）とファクトチェックの最新技術",
       "lastSyncedAt": "2025-08-15T02:08:41.621Z",
       "microCMSUpdatedAt": "2025-08-14T04:11:26.100Z"
+    },
+    "6mfam1a3pfn": {
+      "qiitaId": "914f68213f6e4ad9672a",
+      "title": "【2025年決定版】AIエージェントが世界を変える - 自律型AIの最新技術とビジネス応用事例",
+      "lastSyncedAt": "2025-08-16T02:02:33.843Z",
+      "microCMSUpdatedAt": "2025-08-15T15:56:32.410Z"
     }
   }
 }
