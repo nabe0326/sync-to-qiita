@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-08-17T02:20:08.780Z",
+  "lastSyncTime": "2025-08-18T02:20:50.275Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -282,6 +282,12 @@
       "title": "【2025年決定版】AIエージェントが世界を変える - 自律型AIの最新技術とビジネス応用事例",
       "lastSyncedAt": "2025-08-16T02:02:33.843Z",
       "microCMSUpdatedAt": "2025-08-15T15:56:32.410Z"
+    },
+    "yomtd2hxz": {
+      "qiitaId": "d859cd087209809e6d8c",
+      "title": "MBTI×異世界転生で診断アプリを作る！GPT-4とStable Diffusionで実現するUNITE開発計画",
+      "lastSyncedAt": "2025-08-18T02:20:48.271Z",
+      "microCMSUpdatedAt": "2025-08-17T06:58:48.201Z"
     }
   }
 }
