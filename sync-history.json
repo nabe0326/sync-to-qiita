@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-08-26T02:00:02.234Z",
+  "lastSyncTime": "2025-08-26T14:27:41.435Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -336,6 +336,12 @@
       "title": "日本の『AI推進法』（2025/5成立）を3分で理解：企業が今すぐやる準備",
       "lastSyncedAt": "2025-08-26T02:00:00.230Z",
       "microCMSUpdatedAt": "2025-08-25T12:46:52.475Z"
+    },
+    "98bn-58w6": {
+      "qiitaId": "d1822cef8bbcaa6f0e22",
+      "title": "OpenAI Responses Starter App完全ガイド - 最新AIツール統合プラットフォームの全貌",
+      "lastSyncedAt": "2025-08-26T14:27:39.431Z",
+      "microCMSUpdatedAt": "2025-08-26T14:24:46.466Z"
     }
   }
 }
