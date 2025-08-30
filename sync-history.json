@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-08-29T01:55:20.613Z",
+  "lastSyncTime": "2025-08-30T01:49:42.973Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -348,6 +348,12 @@
       "title": "ChatGPTのAdvanced Voice Mode体験記：人間レベルの音声AIが変える未来",
       "lastSyncedAt": "2025-08-28T01:55:30.386Z",
       "microCMSUpdatedAt": "2025-08-27T10:53:10.229Z"
+    },
+    "v5irvw3all8": {
+      "qiitaId": "5aa966ae8090a565a62f",
+      "title": "話題沸騰！「nano-banana」の正体はGemini 2.5 Flash Image！使い方から驚きの性能まで徹底解説",
+      "lastSyncedAt": "2025-08-30T01:49:40.970Z",
+      "microCMSUpdatedAt": "2025-08-29T08:50:51.880Z"
     }
   }
 }
