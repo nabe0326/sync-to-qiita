@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-09-01T02:11:30.958Z",
+  "lastSyncTime": "2025-09-02T01:57:25.563Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -354,6 +354,12 @@
       "title": "話題沸騰！「nano-banana」の正体はGemini 2.5 Flash Image！使い方から驚きの性能まで徹底解説",
       "lastSyncedAt": "2025-08-30T01:49:40.970Z",
       "microCMSUpdatedAt": "2025-08-29T08:50:51.880Z"
+    },
+    "fzzs6p7brld": {
+      "qiitaId": "f9861ba0d3b47e9c721f",
+      "title": "【2025年最新】OpenAI CodeX CLIが開発者の常識を破壊する｜Claude Code・Cursor AIと徹底比較",
+      "lastSyncedAt": "2025-09-02T01:57:23.558Z",
+      "microCMSUpdatedAt": "2025-09-01T13:25:16.251Z"
     }
   }
 }
