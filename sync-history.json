@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-09-02T01:57:25.563Z",
+  "lastSyncTime": "2025-09-03T01:49:30.845Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -360,6 +360,12 @@
       "title": "【2025年最新】OpenAI CodeX CLIが開発者の常識を破壊する｜Claude Code・Cursor AIと徹底比較",
       "lastSyncedAt": "2025-09-02T01:57:23.558Z",
       "microCMSUpdatedAt": "2025-09-01T13:25:16.251Z"
+    },
+    "6t0449dtzgl": {
+      "qiitaId": "d96c612bc8cd8b2f6091",
+      "title": "Notion MCPで超効率化！ClaudeとNotion連携の衝撃的な威力",
+      "lastSyncedAt": "2025-09-03T01:49:28.840Z",
+      "microCMSUpdatedAt": "2025-09-02T12:10:42.010Z"
     }
   }
 }
