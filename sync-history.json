@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-09-30T01:50:47.316Z",
+  "lastSyncTime": "2025-10-01T02:03:40.706Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -450,6 +450,12 @@
       "title": "Gemini 2.5 Flash Image（Nano Banana）が革命を起こす！DifyでのAI画像生成・編集の新時代",
       "lastSyncedAt": "2025-09-27T01:48:23.446Z",
       "microCMSUpdatedAt": "2025-09-26T11:30:53.417Z"
+    },
+    "nttruposr": {
+      "qiitaId": "21051293c899ac9cffd6",
+      "title": "プロンプト1つでゲーム完成!?「Gambo AI」の衝撃体験レポート",
+      "lastSyncedAt": "2025-10-01T02:03:38.702Z",
+      "microCMSUpdatedAt": "2025-09-30T12:59:49.909Z"
     }
   }
 }
