@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-10-03T01:50:36.051Z",
+  "lastSyncTime": "2025-10-04T01:46:47.418Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -456,6 +456,12 @@
       "title": "プロンプト1つでゲーム完成!?「Gambo AI」の衝撃体験レポート",
       "lastSyncedAt": "2025-10-01T02:03:38.702Z",
       "microCMSUpdatedAt": "2025-09-30T12:59:49.909Z"
+    },
+    "p79tj_-2wm5m": {
+      "qiitaId": "29f58a415213cb85c539",
+      "title": "動画1本でプロ級モーション完成!AI「Plask」でモーキャプ革命が起きた件",
+      "lastSyncedAt": "2025-10-04T01:46:45.415Z",
+      "microCMSUpdatedAt": "2025-10-03T05:19:03.044Z"
     }
   }
 }
