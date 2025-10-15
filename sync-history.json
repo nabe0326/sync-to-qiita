@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-10-14T01:53:47.738Z",
+  "lastSyncTime": "2025-10-15T01:56:32.152Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -474,6 +474,12 @@
       "title": "Excelが「考えて動く」時代へ。MicrosoftのAgent Mode完全解説",
       "lastSyncedAt": "2025-10-14T01:53:45.734Z",
       "microCMSUpdatedAt": "2025-10-13T07:02:28.709Z"
+    },
+    "shfm7a0cbxr5": {
+      "qiitaId": "b75d15f61812d0ba508d",
+      "title": "資料作成が5分で終わる衝撃!イルシルAIで作業時間を1/3に削減した話",
+      "lastSyncedAt": "2025-10-15T01:56:30.148Z",
+      "microCMSUpdatedAt": "2025-10-14T05:26:52.343Z"
     }
   }
 }
