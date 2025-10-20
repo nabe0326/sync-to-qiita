@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2025-10-19T02:07:05.136Z",
+  "lastSyncTime": "2025-10-20T02:03:51.773Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -492,6 +492,12 @@
       "title": "指示1回で仕事が終わる衝撃。中国発AIエージェント「Manus」全解剖",
       "lastSyncedAt": "2025-10-19T02:07:03.131Z",
       "microCMSUpdatedAt": "2025-10-18T06:01:13.549Z"
+    },
+    "yr-19_uldjnw": {
+      "qiitaId": "ba0db654a1a514d19498",
+      "title": "Hume AI「Octave 2」が音声AI革命を起こす!11言語対応&200ms以下の爆速レスポンスの衝撃",
+      "lastSyncedAt": "2025-10-20T02:03:49.768Z",
+      "microCMSUpdatedAt": "2025-10-19T10:09:31.821Z"
     }
   }
 }
