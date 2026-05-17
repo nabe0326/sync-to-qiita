@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2026-05-16T03:47:33.940Z",
+  "lastSyncTime": "2026-05-17T09:19:58.067Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -846,6 +846,18 @@
       "title": "【衝撃】Gambo AI - プロンプト1つでゲーム完成？料金・使い方と知るべき危険性",
       "lastSyncedAt": "2025-11-25T02:02:36.055Z",
       "microCMSUpdatedAt": "2025-11-24T09:17:51.452Z"
+    },
+    "gwaxuah49v": {
+      "qiitaId": "1af7830d5a0189bd8e2c",
+      "title": "LangChainをやめた3つの理由と移行の実際",
+      "lastSyncedAt": "2026-05-17T09:19:53.370Z",
+      "microCMSUpdatedAt": "2026-05-17T09:19:02.004Z"
+    },
+    "2axz7uf-f": {
+      "qiitaId": "fdf20600dc7717d7a048",
+      "title": "Claude APIのプロンプトキャッシュでAPIコスト70%削減した話",
+      "lastSyncedAt": "2026-05-17T09:19:56.065Z",
+      "microCMSUpdatedAt": "2026-05-17T09:19:21.097Z"
     }
   }
 }
