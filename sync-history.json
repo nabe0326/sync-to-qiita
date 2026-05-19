@@ -1,5 +1,5 @@
 {
-  "lastSyncTime": "2026-05-18T04:17:58.039Z",
+  "lastSyncTime": "2026-05-19T04:12:48.369Z",
   "articles": {
     "ymryz52flu": {
       "qiitaId": "a08c48980e85b06b30ec",
@@ -858,6 +858,12 @@
       "title": "Claude APIのプロンプトキャッシュでAPIコスト70%削減した話",
       "lastSyncedAt": "2026-05-17T09:19:56.065Z",
       "microCMSUpdatedAt": "2026-05-17T09:19:21.097Z"
+    },
+    "63b5ce6zbkl": {
+      "qiitaId": "a03213a5137dbf8e66c5",
+      "title": "中小企業のRAG実装：埋め込みモデル比較と最終選定の記録",
+      "lastSyncedAt": "2026-05-19T04:12:46.365Z",
+      "microCMSUpdatedAt": "2026-05-18T13:05:25.503Z"
     }
   }
 }
